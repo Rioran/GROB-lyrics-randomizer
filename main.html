@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>GrOb</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link rel="stylesheet" href="pyscript/pyscript.css" />
+    <script defer src="pyscript/pyscript.js"></script>
+    <link href="css/styles.css" rel="stylesheet">
+    <link href="bootstrap/bootstrap-min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+</head>
+<body>
+    <py-config src="pyscript/pyscript.toml"></py-config>
+    <py-script src="python/main.py"></py-script>
+    <div class='container-fluid min-vh-100 d-flex flex-column align-items-center justify-content-center'>
+        <div class='col-md p-4'>
+            <h1>ООО, МОЯ ОБОРОНА!</h1>
+            <pre id="output">Жми кнопку</pre>
+            <button type="button" class="btn btn-success py-button" py-click="print_verse()">Сделать стих!</button>
+        </div>
+    </div>
+    <script src="bootstrap/bootstrap-bundle-min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+</body>
+</html>
